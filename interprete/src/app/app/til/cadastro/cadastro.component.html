@@ -1,0 +1,16 @@
+<h1>Cadastro do Interprete de Libras</h1>
+
+<br>
+<mat-form-field>
+  <input matInput [(ngModel)]="tilTratamento.nome" placeholder="Digite nome">
+</mat-form-field>
+<mat-form-field>
+  <input matInput [(ngModel)]="tilTratamento.matricula" placeholder="Digite matrícula">
+</mat-form-field>
+<mat-form-field>
+  <input matInput [(ngModel)]="tilTratamento.telefone" placeholder="Digite telefone">
+</mat-form-field>
+
+<button mat-button (click)="cadastrar()">{{nomeBotao}}</button>
+<br>
+<div class="mensagem-erro">{{mensagemErro}}</div>
